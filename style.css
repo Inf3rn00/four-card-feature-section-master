@@ -129,12 +129,10 @@ img{
         gap: 2rem;
         margin-top: 70px;
     }
-
     .left,
     .right{
-        margin: auto;
+        width: 100%
     }
-    
 }
 
 @media(max-width: 800px) {

@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+:root{
+
+    /*///////primary///////////*/
+
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    
+    /*/////////neutral//////////*/
+
+    --veryDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+}
+
+body{
+    background-color: var(--veryLightGray);
+    display: grid;
+    align-items: center;
+    min-height: 100dvh;
+}
+
+main{
+    padding: 30px;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+h1{
+    font-size: 30px;
+    color: var(--grayishBlue);
+    font-weight: 400;
+}
+span{
+    font-size: 30px;
+    color: var(--veryDarkBlue);
+    font-weight: 600;
+}
+
+p{
+    color: var(--grayishBlue);
+    margin: 5px 0;
+}
+h3{
+    color: var(--veryDarkBlue);
+    font-size: 16px;
+}
+
+img{
+    width: 50px;
+    float: right;
+    margin-top: 10px;
+    padding-right: 10px;
+
+}
+
+.supervisor,
+.karma,
+.team-builder,
+.calculator{
+    max-width: 350px;
+    height: 200px;
+    padding: 15px;
+    box-shadow: 1px 1px 10px rgb(167, 192, 223);
+}
+
+.supervisor{
+    border-top: 4px solid var(--cyan);
+}
+
+.karma{
+    border-top: 4px solid var(--orange);
+}
+.team-builder{
+    border-top: 4px solid var(--red);
+}
+
+.calculator{
+    border-top: 4px solid var(--blue);
+
+}
+
+.picture-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture-container p{
+    font-size: 15px;
+}
+
+.left{
+    display: grid;
+    place-content: center;
+    margin-right: 50px;
+    
+}
+
+.center{
+    display: grid;
+    gap: 50px;
+}
+.right{
+    display: grid;
+    place-content: center;
+    margin-left: 50px;
+ 
+}
+
+
+@media (max-width: 750px){
+    body{
+       display: block;
+    }
+    .picture-container{
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 70px;
+    }
+
+    .left,
+    .right{
+        margin: auto;
+    }
+    
+}
+
+@media(max-width: 800px) {
+
+.left,
+.right{
+    margin: 0 25px;
+}
+
+.center{
+    gap: 25px;
+}
+
+.supervisor,
+.karma,
+.team-builder,
+.calculator{
+    height: 199px;
+}
+}
